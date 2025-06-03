@@ -7,7 +7,7 @@ import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import { styWrapper, styHero, styBackground, styButtonWrapper } from './styles';
 
-const DELAY_TIME = 1500;
+const DELAY_TIME = 1000;
 
 function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, codeLink, onClickDetail }) {
   const [loading, setLoading] = useState(false);
@@ -45,14 +45,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
   };
 
   const renderGuestSection = () => {
-    if (isAnonymGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
-
-    return (
-      <Fragment>
-        <h3 className="to-dearest">To our Dearest</h3>
-        <h2 className="to-dearest-name">{guestName}</h2>
-      </Fragment>
-    );
+    if (isAnonymGuest) return <h2 className="to-dearest-name">Bạn thân mến,</h2>;
   };
 
   return (
@@ -67,10 +60,10 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="overlay"></div>
         <div className="container">
           <div className="row" css={styWrapper}>
-            <div className="col-md-8 col-md-offset-2 text-center">
-              <img src={WeddingImg} alt="wedding-dinda-indra" />
-              <h4 className="sub-title">The Wedding of</h4>
-              <h1 className="title">Dinda &amp; Indra</h1>
+            <div className="text-center">
+              <img src={WeddingImg} alt="wedding-duong-hien" />
+              <h4 className="sub-title">Đám cưới của</h4>
+              <h1 className="title">Xuân Dương &amp; Thu Hiền</h1>
               <div className={isAnonymGuest ? 'margin__bottom' : ''}>
                 <CountContainer />
               </div>

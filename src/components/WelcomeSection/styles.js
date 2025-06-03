@@ -142,7 +142,7 @@ export const styBackground = css`
 
   @media screen and (max-width: 500px) {
     .title {
-      font-size: 54px;
+      font-size: 40px;
     }
 
     .sub-title {
@@ -162,9 +162,9 @@ export const styWrapper = css`
 
   h1 {
     margin-bottom: 0px;
-    font-size: 100px;
+    font-size: 88px;
     line-height: 1.5;
-    font-family: 'Cookie', cursive;
+    font-family: 'DancingScript-Regular', sans-serif !important;
     color: #fff;
   }
 
@@ -177,12 +177,20 @@ export const styWrapper = css`
   }
 
   h4 {
-    font-family: 'Cookie', cursive;
+    font-family: 'DancingScript-Regular', sans-serif !important;
     margin: 0;
     color: #fff;
     font-size: 30px;
   }
+  .row {
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center;     /* căn giữa theo chiều dọc */
+  }
 
+  .text-center {
+    position: relative;
+  }
   .getting-married {
     margin-top: -12px;
   }
@@ -244,10 +252,10 @@ export const styWrapperCount = css`
   }
 
   @media screen and (max-width: 500px) {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     margin: 4px;
-    font-size: 12px;
+    font-size: 10px;
 
     h3 {
       font-size: 24px;

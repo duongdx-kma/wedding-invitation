@@ -145,7 +145,7 @@ function GenerateLink() {
   return (
     <div>
       <h2 className="title">Generator of Link Invitation</h2>
-      <h3 className="title__sub">Dinda & Indra Wedding</h3>
+      <h3 className="title__sub">Đám cưới của Xuân Dương & Thu Hiền</h3>
 
       {loading && <h4 style={{ textAlign: 'center' }}>Memuat data..</h4>}
 

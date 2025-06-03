@@ -102,7 +102,7 @@ export const styTicket = css`
   }
 
   .title {
-    font-family: 'Cookie', cursive;
+    font-family: 'DancingScript-Regular', sans-serif !important;
     font-weight: 600;
     letter-spacing: 4px;
     font-size: 45px;
